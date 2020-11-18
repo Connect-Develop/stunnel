@@ -1,3 +1,4 @@
+# credit: http://kb.ictbanking.net/article.php?id=651&oid=2
 [Unit]
 Description=SSL tunnel for network daemons
 Documentation=man:stunnel https://www.stunnel.org/docs.html
@@ -12,5 +13,5 @@ Alias=stunnel.target
 [Service]
 Type=forking
 EnvironmentFile=-/etc/sysconfig/stunnel.conf 
-ExecStart=/usr/bin/stunnel /etc/stunnel/stunnel.conf
+ExecStart=/usr/bin/stunnel /etc/stunnel/redis-cli.conf
 LimitNOFILE=infinity
